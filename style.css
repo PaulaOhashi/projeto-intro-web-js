@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 2662px;
+}
+
+/*****************************************Header**************************************/
+header{
+    display: flex;
+    height: 152px;
+    align-items: center;
+    background-color: #fbfbfb;
+}
+
+#logo-header{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+header nav{
+    display: flex;
+    width: 50vw;
+    justify-content: flex-end;
+    margin-right: 4em;
+}
+
+.menu-header{
+    display: flex;
+    gap:4em;
+    list-style: none;
+}
+
+.menu-header a{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #0E0E0E;
+    text-decoration: none;
+}
+
+/*******************************HOME****************************/
+.tela-inicial{
+    background-image: url(./imagens/background-hero.png);
+    background-color: #F6C34A;
+    height: 777px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-inicial h1{
+    font-weight: 700;
+    font-size: 3.75em;
+    line-height: 90px;
+}
+
+.tela-inicial p{
+    font-weight: 700;
+    font-size: 2.125rem;
+    line-height: 51px;
+    padding-bottom: 3em;
+}
+
+#botao-conheca-cursos{
+    color: white;
+    background-color: #0E0E0E;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 36px;
+    width: 23.4vw;
+    height: 10.16vh;    
+    border-radius: 1em;
+}
+
+/*************************************Sobre Nós*******************************/
+.sobre-nos{
+    padding-top: 2em;
+    background-color: #0E0E0E;
+    color: #fbfbfb;
+    height: 1161px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.sobre-nos h1, .depoimentos h1{
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 60px;
+}
+
+.sobre-nos p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 36px;
+    width: 57vw;
+   text-align: justify;
+}
+
+/*******************************Depoimentos*****************************/
+.depoimentos{
+    padding-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+}
+
+.container-depoimentos{
+    display: flex;
+    gap:1em;
+    width: 100%;
+    justify-content: center;
+}
+
+.depoimento{
+    color:#0E0E0E;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:7%;
+    width: 330px;
+    height: 372px;
+}
+
+.depoimento p{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 24px;
+    margin-left: 1em;
+    padding-right: 1em;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/***************************************Footer**********************************/
+footer{
+    display: flex;
+    background-color: #F6C34A;
+    height: 574px;
+    gap:4em;
+    justify-content: center;
+    padding-top: 5em;
+}
+
+#logo{
+    width: 210px;
+    height: 45.23px;
+}
+
+.links-footer{
+    padding-top: 1em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;  
+    list-style: none;
+}
+
+.links-footer a{
+    text-decoration: none;
+    color: #0E0E0E;
+}
+
+.footer4 h1{
+    padding-bottom: 1em;
+}
+
+.footer4 p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;  
+}
+
+/**********************************CURSOS*********************************/
+/********************Primeira Parte********************/
+.container-cursos{
+    background-color: #F6C34A;
+    height: 777px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 1fr 1fr;
+    gap:2em;
+    justify-items: center;
+    align-items: center;
+}
+
+#botao-quero-fazer-parte{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 450px;
+    height: 79px;
+    background-color: #0E0E0E;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    border-radius: 1em;
+}
+
+#botao-quero-fazer-parte a{
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+.curso-parte1 h1{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+}
+
+.curso-parte1 p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.curso-parte1{
+    background-color: white;
+    border-radius: 1rem;
+    width: 387px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+}
+
+/******************************Segunda Parte CURSOS***********************/
+.parte2-cursos{
+    background-color: #0E0E0E;
+    color: #fbfbfb;
+    height: 1161px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.curso-parte2{
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    background-color: #fbfbfb;
+    color: #0E0E0E;
+    width: 930px;
+    height: 246px;
+    border-radius: 1em;
+    justify-content: center;
+}
+
+.curso-parte2 h1{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+}
+
+.modulo h1, #js,#htmlecss,#apis{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.modulo li{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    list-style: none;
+}
+
+/**********************************CONTATO*********************************/
+.short-body{
+    height: 1480px;
+}
+
+#fale-conosco{
+    background-color: #0E0E0E;
+    height: 777px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#fale-conosco div{
+    background-color: #fbfbfb;
+    color: #0E0E0E;
+    width: 486.16px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+#fale-conosco h1{
+    font-weight: 700;
+    font-size: 23.9555px;
+    line-height: 36px;
+    padding-bottom: 1em;
+}
+
+#formulario-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.2em;
+    font-weight: 700;
+    font-size: 23.9555px;
+    line-height: 36px;
+}
+
+#formulario-contato label, #container-turmas, #find, #nome-relatorio, #container-relatorio, #name-mat, #curso-mat,#turma-mat,#num-parc, #curso-finan{
+    font-weight: 700;
+    font-size: 23.9555px;
+    line-height: 36px;
+}
+
+#formulario-contato input{
+    width: 360px;
+    border: 1.4px solid black;
+}
+
+#formulario-contato button{
+    background-color: #F6C34A;
+    width: 357.92px;
+    height: 55.66px;
+    font-weight: 700;
+    font-size: 23.9555px;
+    line-height: 36px;
+    border-radius: 0.5em;
+}
+
+#botao-contato:hover{
+    border-color: black;
+    border-width: 0.15em;
+}
+
+#msg{
+    height: 159.23px;
+    font-weight: 700;
+    font-size: 23.9555px;
+    line-height: 36px;
+}
+
+#name, #email{
+    height: 41px;
+    font-weight: 700;
+    font-size: 23.9555px;
+    line-height: 36px;
+}
+
+#mensagem-contato{
+    font-weight: 700;
+    font-size: 23.9555px;
+    line-height: 36px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+/****************************************ADM**************************************/
+#primeira-parte-adm{
+    background-color: #F6C34A;
+    height: 777px;
+    width: 100vw;
+    display: flex;
+}
+
+#primeira-parte-adm nav{
+    width: 20%;
+    background-color: #0E0E0E;
+}
+
+#primeira-parte-adm a{
+    color: #fbfbfb;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+#primeira-parte-adm ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2em;
+    padding-top: 4em;
+}
+
+#turmas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 5em;
+    padding-top: 3em;
+}
+
+#botao-turmas{
+    font-size: 20px;
+    line-height: 30px;  
+    font-weight: 700;
+    width: 130px;
+    height: 45px; 
+    background-color: #0E0E0E;
+    color: #fbfbfb;  
+    border-radius: 0.5em;
+}
+
+#find{
+    width: 450px;
+    height: 43px;
+}
+
+#container-turmas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    margin-left: 1em;
+}
+
+#turma{
+    background-color: #fbfbfb;
+    color: #0E0E0E;
+    width: 240px;
+    height: 223px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/**********************************Matriculas************************/
+.matriculas{
+    display: flex;
+    width: 100%;
+}
+
+.matricular{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+}
+
+#formulario-mat{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+#formulario-mat input, .financeiro input, .relatorio-aluno input{
+    width: 330px;
+    height: 40px;
+}
+ 
+#formulario-mat label, .financeiro label, .relatorio-aluno label{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#botao-matricula, #botao-financeiro, #buscar-aluno{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    background-color: #0E0E0E;
+    color: #fbfbfb;
+    width: 330px;
+    height: 49.59px;
+    border-radius: 0.5em;
+}
+
+#aluno-matriculado{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 5em;
+    width: 100%;
+}
+
+#aluno-matriculado h1{
+    padding-bottom: 2em;
+    
+}
+
+#titulo-matriculas{
+    font-size: 25px;
+}
+
+/***************************Financeiro*******************************/
+.parte-financeiro-alunos{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.financeiro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    gap:2em;
+}
+
+.formulario-financeiro{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.financeiro h1, .relatorio-aluno h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.financeiro p,#curso-finan,#n-parc{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+#curso-finan,#n-parc{
+    height: 2.5em;
+}
+
+/*****************************Relatorio aluno**************************/
+.relatorio-aluno{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+}
+
+#nome-relatorio{
+    height: 1.8em;
+}
+
+/************************************BOTÕES***************************/
+.button-mouse:hover{
+    border-width: 0.2em;
+    border-color: white;
+}
+
+/***********************************LOGO WHATSAPP*********************/
+#logo-whatsApp{
+    position: fixed;
+    right: 50px;
+    top: 700px;
+}
