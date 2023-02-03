@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Projeto intro Web</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="short-body">
+    <header>
+        <a href="index.html">
+            <div id="logo-header">
+                <img src="./imagens/logo 1.png" alt="LabEscola logo">
+            </div>
+        </a>            
+        <nav>
+            <ul class="menu-header">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="adm.html">Área ADM</a></li>    
+            </ul>
+        </nav>
+    </header>
+    <section id="logo-whatsApp">
+        <img src="./imagens/logos_whatsapp-icon.png" alt="Logo Whatsapp">
+    </section>
+    <section id="primeira-parte-adm">
+        <nav>
+            <ul>
+                <li><a href="adm.html">Turmas</a></li>
+                <li><a href="matriculas.html">Matrículas</a></li>
+                <li><a href="financeiro.html">Financeiro alunos</a></li>
+            </ul>
+        </nav>
+        <section class="matriculas">
+            <div class="matricular">
+                <h1 id="titulo-matriculas">Matrículas</h1>
+                <form id="formulario-mat">
+                    <label for="name-mat" class="labels">Nome</label>
+                    <input type="text" name="name-mat" id="name-mat">
+                    <label for="curso-mat">Curso</label>
+                    <input type="text" name="curso-mat" id="curso-mat">
+                    <label for="turma-mat">Turma</label>
+                    <input type="text" name="turma-mat" id="turma-mat">
+                    <label for="num-parc">Número de Parcelas</label>
+                    <input type="text" name="num-parc" id="num-parc">
+                    <button id="botao-matricula" onclick="matricular()" class="button-mouse">Matricular Aluno</button>
+                </form>
+            </div>
+            <div id="aluno-matriculado">
+                <p id="container-aluno"></p>
+            </div>
+        </section><!--matricluas-->
+    </section><!--primeira-parte-adm-->
+    <footer>
+        <section class="footer1">
+            <img id="frame2" src="./imagens/Frame 2.png">
+            <h1>Endereço</h1>
+            <img id="mapa" src="./imagens/Rectangle 4.png">
+        </section>    
+        <section class="footer2">
+            <h1>Links</h1>
+            <ul id="links-footer">
+                <li>Home</li>
+                <li>Typography</li>
+                <li>Blog</li>
+                <li>Fale Conosco</li>
+                <li>Termos e Condições</li>
+                <li>Política de Privacidade</li>
+                <li>FAQ</li>
+            </ul>
+        </section>
+        <section class="footer3">
+            <h1>Redes Sociais</h1>
+            <img src="imagens/Vector.png" alt="logo twitter">
+            <img src="imagens/Vector (1).png" alt="logo linkedin">
+            <img src="imagens/Vector (2).png" alt="logo Facebook">
+            <img src="imagens/Vector (3).png" alt="logo Instagram">
+        </section>
+        <section class="footer4">
+            <h1>Área restrita</h1>
+            <p>Área administrativa</p>
+            <p>Espaço do aluno</p>
+        </section>
+    </footer>
+</body>
